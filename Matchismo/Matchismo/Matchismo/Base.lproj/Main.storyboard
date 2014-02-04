@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -136,8 +136,8 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UaK-eG-5Jr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mun-cJ-9b0">
-                                <rect key="frame" x="20" y="527" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOf-hn-Mtm">
+                                <rect key="frame" x="20" y="439" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -147,7 +147,19 @@
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="flipsLabel" destination="mun-cJ-9b0" id="RHx-eU-RRt"/>
+                        <outlet property="scoreLabel" destination="bOf-hn-Mtm" id="f7C-ch-bGI"/>
+                        <outletCollection property="cardButtons" destination="v3R-1D-OIz" id="3wq-Ax-YIB"/>
+                        <outletCollection property="cardButtons" destination="xqu-gP-vaY" id="WLE-1q-XxY"/>
+                        <outletCollection property="cardButtons" destination="fOq-Zv-2dJ" id="ty9-5T-IdI"/>
+                        <outletCollection property="cardButtons" destination="Jq7-tb-t30" id="ltT-GG-eti"/>
+                        <outletCollection property="cardButtons" destination="ZOh-9B-fvm" id="nnX-35-rws"/>
+                        <outletCollection property="cardButtons" destination="e42-gt-34g" id="9Yc-oH-6BL"/>
+                        <outletCollection property="cardButtons" destination="8pw-jh-OkO" id="yQJ-G2-pb3"/>
+                        <outletCollection property="cardButtons" destination="Y1G-sS-Zfr" id="DsR-IJ-L96"/>
+                        <outletCollection property="cardButtons" destination="xtN-Ya-paU" id="CBq-tW-WAI"/>
+                        <outletCollection property="cardButtons" destination="4pz-h3-RCt" id="dns-fh-uVP"/>
+                        <outletCollection property="cardButtons" destination="uQ8-6M-lCg" id="sct-Sy-mCy"/>
+                        <outletCollection property="cardButtons" destination="SoZ-bh-Trh" id="eFH-VY-5ZJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
