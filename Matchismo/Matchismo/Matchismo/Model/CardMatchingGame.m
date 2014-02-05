@@ -11,6 +11,8 @@
 @interface CardMatchingGame()
 @property(nonatomic,readwrite)NSInteger score;
 @property(nonatomic,strong)NSMutableArray *cards;//of card
+@property(nonatomic,strong)NSMutableArray *choosenCards;//of card
+@property(nonatomic)NSInteger gameMode;
 @end
 
 @implementation CardMatchingGame
@@ -21,11 +23,13 @@
     return _cards;
 }
 
--(instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck{
+-(instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck gameMode:(NSInteger)gameMode{
 
     self=[super init];
     
     if(self){
+        self.gameMode=gameMode;
+        self.choosenCards=[[NSMutableArray alloc] init];
         for(int i=0;i<count;i++){
             Card *card=[deck drawRandomCard];
             if(card){
@@ -65,18 +69,34 @@ static const int COST_TO_CHOSE=1;
             card.chosen=NO;
         }else{
             //match against other choosen cards
+            [self.choosenCards removeAllObjects];
+             [self.choosenCards addObject:card];
             for(Card *othercard in self.cards){
             
                 if(othercard.isChosen && !othercard.matched){
-                    int matchScore=[card match:@[othercard]];
-                    if(matchScore){
-                        self.score+=matchScore+MATCH_BONUS;
-                        card.matched=YES;
-                        othercard.matched=YES;
-                    }else{
-                        self.score -=MISMATCH_PENALTY;
-                        othercard.chosen=NO;
+                    
+                    [self.choosenCards addObject:othercard];
+                    
+                    
+                    if((((self.gameMode==0) && ([self.choosenCards count] == 2) ? true : false)) || (((self.gameMode==1) && ([self.choosenCards count] == 3) ? true : false))){
                         
+                       int matchScore=[card match:self.choosenCards];
+                       if(matchScore){
+                         self.score+=matchScore+MATCH_BONUS;
+                         card.matched=YES;
+                         //othercard.matched=YES;
+                           for(Card *othercard_x  in self.choosenCards){
+                               othercard_x.matched=YES;
+                           }
+                        }else{
+                          self.score -=MISMATCH_PENALTY;
+                          othercard.chosen=NO;
+                        
+                         }
+                        [self.choosenCards removeAllObjects];
+                    }else{
+                    
+                        card.chosen=YES;
                     }
                 }
             }
