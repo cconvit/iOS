@@ -16,6 +16,7 @@
 @property(strong,nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *gameMode;
+@property (weak, nonatomic) IBOutlet UILabel *lastPlayLabel;
 @end
 
 @implementation CardGameViewController
@@ -61,6 +62,7 @@
         self.scoreLabel.text=[NSString stringWithFormat:@"Score: %ld",(long)self.game.score];
         
     }
+    self.lastPlayLabel.text=self.game.lastPlay;
 }
 
 -(NSString *)titleForCard:(Card *)card{
@@ -90,6 +92,7 @@
         self.deck=nil;
         self.scoreLabel.text=@"Score: 0";
         self.gameMode.enabled=YES;
+        self.lastPlayLabel.text=@"";
         
         for(UIButton *cardButton in self.cardButtons){
             

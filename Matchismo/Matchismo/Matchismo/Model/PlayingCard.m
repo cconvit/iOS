@@ -36,16 +36,17 @@
                 
                 PlayingCard *otherCard_y=otherCards[y];
                 if(otherCard_y.rank == otherCard_x.rank){
-                    score+=4;
+                    score+=6;
                     
                     
                 }else if ([otherCard_y.suit isEqualToString:otherCard_x.suit]){
-                    score+=1;
+                    score+=3;
                 }
                 
             }
         }
 
+        if(score == 9 || score == 12)score=score*2;
         
         
     }
