@@ -13,7 +13,7 @@
 @property (strong,nonatomic) NSString *contents;
 @property(nonatomic,getter=isChosen) BOOL chosen;
 @property(nonatomic,getter=isMatched) BOOL matched;
-@property(nonatomic,strong) NSNumber *number;
 
+-(NSAttributedString *)getAttributeContents;
 -(int) match:(NSArray *) otherCard;
 @end

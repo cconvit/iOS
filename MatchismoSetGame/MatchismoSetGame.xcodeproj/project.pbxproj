@@ -26,6 +26,11 @@
 		79D492F518A56A0E00817CC5 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D492F018A56A0E00817CC5 /* PlayingCardDeck.m */; };
 		79D492F818A56A6800817CC5 /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D492F718A56A6800817CC5 /* CardGameViewController.m */; };
 		79D492FA18A56A7800817CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D492F918A56A7800817CC5 /* Main.storyboard */; };
+		79D492FD18A90B1200817CC5 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D492FC18A90B1200817CC5 /* PlayingCardGameViewController.m */; };
+		79D4930018A9103200817CC5 /* SetCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D492FF18A9103200817CC5 /* SetCard.m */; };
+		79D4930318A911F500817CC5 /* SetCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4930218A911F500817CC5 /* SetCardView.m */; };
+		79D4930618A9127A00817CC5 /* SetCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4930518A9127A00817CC5 /* SetCardGameViewController.m */; };
+		79D4930918A9392100817CC5 /* SetCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4930818A9392100817CC5 /* SetCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,16 @@
 		79D492F618A56A6800817CC5 /* CardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
 		79D492F718A56A6800817CC5 /* CardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
 		79D492F918A56A7800817CC5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		79D492FB18A90B1200817CC5 /* PlayingCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardGameViewController.h; sourceTree = "<group>"; };
+		79D492FC18A90B1200817CC5 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardGameViewController.m; sourceTree = "<group>"; };
+		79D492FE18A9103200817CC5 /* SetCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCard.h; sourceTree = "<group>"; };
+		79D492FF18A9103200817CC5 /* SetCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCard.m; sourceTree = "<group>"; };
+		79D4930118A911F500817CC5 /* SetCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCardView.h; sourceTree = "<group>"; };
+		79D4930218A911F500817CC5 /* SetCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCardView.m; sourceTree = "<group>"; };
+		79D4930418A9127A00817CC5 /* SetCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCardGameViewController.h; sourceTree = "<group>"; };
+		79D4930518A9127A00817CC5 /* SetCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCardGameViewController.m; sourceTree = "<group>"; };
+		79D4930718A9392100817CC5 /* SetCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCardDeck.h; sourceTree = "<group>"; };
+		79D4930818A9392100817CC5 /* SetCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +143,14 @@
 			isa = PBXGroup;
 			children = (
 				79D492F918A56A7800817CC5 /* Main.storyboard */,
+				79D4930118A911F500817CC5 /* SetCardView.h */,
+				79D4930218A911F500817CC5 /* SetCardView.m */,
 				79D492F618A56A6800817CC5 /* CardGameViewController.h */,
 				79D492F718A56A6800817CC5 /* CardGameViewController.m */,
+				79D4930418A9127A00817CC5 /* SetCardGameViewController.h */,
+				79D4930518A9127A00817CC5 /* SetCardGameViewController.m */,
+				79D492FB18A90B1200817CC5 /* PlayingCardGameViewController.h */,
+				79D492FC18A90B1200817CC5 /* PlayingCardGameViewController.m */,
 				79D492E618A56A0E00817CC5 /* Model */,
 				79D492C918A569FF00817CC5 /* Images.xcassets */,
 				79D492B818A569FF00817CC5 /* Supporting Files */,
@@ -179,6 +200,10 @@
 				79D492EC18A56A0E00817CC5 /* Deck.m */,
 				79D492ED18A56A0E00817CC5 /* PlayingCard.h */,
 				79D492EE18A56A0E00817CC5 /* PlayingCard.m */,
+				79D492FE18A9103200817CC5 /* SetCard.h */,
+				79D4930718A9392100817CC5 /* SetCardDeck.h */,
+				79D4930818A9392100817CC5 /* SetCardDeck.m */,
+				79D492FF18A9103200817CC5 /* SetCard.m */,
 				79D492EF18A56A0E00817CC5 /* PlayingCardDeck.h */,
 				79D492F018A56A0E00817CC5 /* PlayingCardDeck.m */,
 			);
@@ -283,14 +308,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D4930318A911F500817CC5 /* SetCardView.m in Sources */,
+				79D4930618A9127A00817CC5 /* SetCardGameViewController.m in Sources */,
 				79D492C218A569FF00817CC5 /* CardGameAppDelegate.m in Sources */,
 				79D492F518A56A0E00817CC5 /* PlayingCardDeck.m in Sources */,
 				79D492F418A56A0E00817CC5 /* PlayingCard.m in Sources */,
 				79D492F218A56A0E00817CC5 /* CardMatchingGame.m in Sources */,
+				79D4930018A9103200817CC5 /* SetCard.m in Sources */,
 				79D492BE18A569FF00817CC5 /* main.m in Sources */,
+				79D4930918A9392100817CC5 /* SetCardDeck.m in Sources */,
 				79D492F318A56A0E00817CC5 /* Deck.m in Sources */,
 				79D492F818A56A6800817CC5 /* CardGameViewController.m in Sources */,
 				79D492F118A56A0E00817CC5 /* Card.m in Sources */,
+				79D492FD18A90B1200817CC5 /* PlayingCardGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +521,7 @@
 				79D492E218A569FF00817CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79D492E318A569FF00817CC5 /* Build configuration list for PBXNativeTarget "MatchismoSetGameTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +530,7 @@
 				79D492E518A569FF00817CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
